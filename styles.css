@@ -16,124 +16,106 @@ html{
 }
 
 body{
-
     font-family:'Inter',sans-serif;
     background:#ffffff;
     color:#1f2937;
     line-height:1.7;
-
 }
 
 .container{
-
-    width:min(1200px,90%);
+    width:min(1320px,92%);
     margin:auto;
-
 }
 
 /* ================= HEADER ================= */
 
 header{
-
     position:fixed;
-
     width:100%;
-
     top:0;
-
     left:0;
-
     z-index:100;
-
     background:rgba(11,31,58,.92);
-
     backdrop-filter:blur(10px);
-
 }
 
 header .container{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:22px 0;
-
+    padding:16px 0;
 }
+
+/* ================= LOGO ================= */
 
 .logo{
-
-    color:white;
-
-    font-weight:700;
-
-    font-size:1.25rem;
-
-    letter-spacing:.5px;
-
+    display:flex;
+    flex-direction:column;
 }
 
+.logo-title{
+    font-size:2rem;
+    font-weight:700;
+    color:white;
+    line-height:1;
+}
+
+.logo-subtitle{
+    font-size:.75rem;
+    letter-spacing:4px;
+    color:#C8A45D;
+    margin-top:8px;
+}
+
+/* ================= MENU ================= */
+
 nav{
-
     display:flex;
-
-    gap:40px;
-
+    gap:42px;
 }
 
 nav a{
-
     color:white;
-
     text-decoration:none;
-
     transition:.3s;
-
     font-size:.95rem;
-
+    font-weight:500;
 }
 
 nav a:hover{
-
     color:#C8A45D;
-
 }
 
 /* ================= HERO ================= */
 
 .hero{
 
-    min-height:92vh;
+    min-height:88vh;
 
     background-image:
-        linear-gradient(
-            rgba(8,18,38,.70),
-            rgba(8,18,38,.80)
-        ),
-        url("assets/images/Hero.png");
+    linear-gradient(
+        rgba(8,18,38,.72),
+        rgba(8,18,38,.82)
+    ),
+    url("assets/images/Hero.png");
 
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
 
     padding:120px 30px;
-
 }
+
 .hero-content{
 
     max-width:900px;
+
+    margin-top:-40px;
 
 }
 
@@ -143,11 +125,11 @@ nav a:hover{
 
     text-transform:uppercase;
 
-    letter-spacing:4px;
+    letter-spacing:5px;
 
-    font-size:.8rem;
+    font-size:.85rem;
 
-    margin-bottom:25px;
+    margin-bottom:28px;
 
 }
 
@@ -157,11 +139,11 @@ nav a:hover{
 
     font-family:'Playfair Display',serif;
 
-    font-size:4.5rem;
+    font-size:4rem;
 
-    line-height:1.15;
+    line-height:1.08;
 
-    margin-bottom:30px;
+    margin-bottom:35px;
 
 }
 
@@ -169,11 +151,15 @@ nav a:hover{
 
     color:#D8DEE8;
 
-    font-size:1.18rem;
+    font-size:1.15rem;
 
     font-weight:300;
 
-    max-width:700px;
+    max-width:620px;
+
+    margin:0 auto 45px;
+
+    line-height:1.8;
 
 }
 
@@ -185,7 +171,7 @@ nav a:hover{
 
     justify-content:center;
 
-    gap:20px;
+    gap:18px;
 
     flex-wrap:wrap;
 
@@ -193,9 +179,9 @@ nav a:hover{
 
 .buttons a{
 
-     padding:14px 32px;
+    padding:14px 28px;
 
-    font-size:.95rem;
+    min-width:180px;
 
     border-radius:50px;
 
@@ -204,6 +190,8 @@ nav a:hover{
     transition:.3s;
 
     font-weight:600;
+
+    font-size:.95rem;
 
 }
 
@@ -219,11 +207,13 @@ nav a:hover{
 
     transform:translateY(-3px);
 
+    box-shadow:0 12px 30px rgba(200,164,93,.35);
+
 }
 
 .secondary{
 
-    border:1px solid white;
+    border:1px solid rgba(255,255,255,.8);
 
     color:white;
 
@@ -237,61 +227,6 @@ nav a:hover{
 
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:900px){
-
-.hero h1{
-
-font-size:2.8rem;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-.subtitle{
-
-font-size:1.1rem;
-
-}
-
-}
-
-.logo{
-
-display:flex;
-
-flex-direction:column;
-
-}
-
-.logo-title{
-
-font-size:1.4rem;
-
-font-weight:700;
-
-letter-spacing:.5px;
-
-color:white;
-
-}
-
-.logo-subtitle{
-
-font-size:.7rem;
-
-letter-spacing:3px;
-
-color:#C8A45D;
-
-margin-top:2px;
-
-}
 /* ================= ABOUT ================= */
 
 .about{
@@ -308,7 +243,7 @@ margin-top:2px;
 
     grid-template-columns:1fr 1fr;
 
-    gap:80px;
+    gap:90px;
 
     align-items:center;
 
@@ -318,9 +253,11 @@ margin-top:2px;
 
     color:#C8A45D;
 
-    font-weight:600;
+    font-size:.85rem;
 
-    letter-spacing:3px;
+    letter-spacing:4px;
+
+    font-weight:600;
 
     margin-bottom:20px;
 
@@ -330,11 +267,11 @@ margin-top:2px;
 
     font-family:'Playfair Display',serif;
 
-    font-size:2.7rem;
-
     color:#0B1F3A;
 
-    line-height:1.25;
+    font-size:2.8rem;
+
+    line-height:1.2;
 
     margin-bottom:35px;
 
@@ -342,9 +279,11 @@ margin-top:2px;
 
 .about p{
 
+    color:#4B5563;
+
     margin-bottom:22px;
 
-    color:#4B5563;
+    font-size:1.05rem;
 
 }
 
@@ -352,25 +291,79 @@ margin-top:2px;
 
     width:100%;
 
-    border-radius:16px;
-
     display:block;
 
-    box-shadow:0 30px 60px rgba(0,0,0,.15);
+    border-radius:18px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
 
 }
 
+/* ================= RESPONSIVE ================= */
+
 @media(max-width:900px){
+
+header .container{
+
+    padding:18px 0;
+
+}
+
+nav{
+
+    display:none;
+
+}
+
+.hero{
+
+    min-height:100vh;
+
+    padding:120px 25px;
+
+}
+
+.hero-content{
+
+    margin-top:0;
+
+}
+
+.hero h1{
+
+    font-size:2.8rem;
+
+}
+
+.subtitle{
+
+    font-size:1rem;
+
+}
 
 .about-grid{
 
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
+
+    gap:50px;
 
 }
 
 .about h2{
 
-font-size:2rem;
+    font-size:2rem;
+
+}
+
+.logo-title{
+
+    font-size:1.5rem;
+
+}
+
+.logo-subtitle{
+
+    font-size:.65rem;
 
 }
 
