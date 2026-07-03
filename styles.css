@@ -367,62 +367,6 @@ nav{
 
 }
 
-   /* ================= TRUST BAR ================= */
-
-.trust-bar{
-
-    background:#ffffff;
-
-    padding:55px 0;
-
-    border-bottom:1px solid #ECECEC;
-
-}
-
-.trust-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:40px;
-
-}
-
-.trust-item{
-
-    text-align:center;
-
-}
-
-.trust-item h3{
-
-    color:#0B1F3A;
-
-    font-size:1.15rem;
-
-    margin-bottom:12px;
-
-}
-
-.trust-item p{
-
-    color:#6B7280;
-
-    font-size:.95rem;
-
-    line-height:1.6;
-
-}
-
-@media(max-width:900px){
-
-.trust-grid{
-
-grid-template-columns:1fr;
-
-gap:30px;
-
 }
 
 }
