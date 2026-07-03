@@ -108,13 +108,17 @@ nav a:hover{
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(11,31,58,.82),
-    rgba(11,31,58,.82)),
-    url("assets/images/ChatGPT Image 2 de jul. de 2026, 12_51_55.png");
+    linear-gradient(
+    rgba(8,18,38,.72),
+    rgba(8,18,38,.82)
+    ),
+    url("assets/images/hero.jpg");
 
     background-size:cover;
 
     background-position:center;
+
+    background-repeat:no-repeat;
 
     display:flex;
 
@@ -127,7 +131,6 @@ nav a:hover{
     padding:120px 30px;
 
 }
-
 .hero-content{
 
     max-width:900px;
